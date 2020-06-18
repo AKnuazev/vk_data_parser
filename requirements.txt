@@ -1,2 +1,0 @@
-requests
-django==1.11
