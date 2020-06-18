@@ -1,5 +1,6 @@
 from source.friends import calc_age
+from source.graphs import make_age_hist
 
-user_id = '50314802'  # Mary
-print(calc_age(user_id))
-
+user_id = 'shaku'  # Mary
+ages_quant = calc_age(user_id)
+make_age_hist(user_id, ages_quant)
