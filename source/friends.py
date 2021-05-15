@@ -44,16 +44,16 @@ def convert_list(res_list):
 
 
 def calc_age(uid):
-    res_list = []
+    # access_token = 4a3358b3f7b982989454757c924cc54ae8070eb1b40488cad710b320daa5a8c62fdcfde23ca1921feb58a
 
-    user_params = {'v': 5.71,
+    user_params = {'v': 5.126,
                    'user_ids': uid,
                    'access_token': 'd9acf98cd9acf98cd9acf98c96d9de6273dd9acd9acf98c874aa57b9b6642522b5a44e4'}
 
     res = r.get('https://api.vk.com/method/users.get', params=user_params)
     uid = res.json()['response'][0]['id']
 
-    friends_params = {'v': 5.71,
+    friends_params = {'v': 5.126,
                       'user_id': uid,
                       'access_token': 'd9acf98cd9acf98cd9acf98c96d9de6273dd9acd9acf98c874aa57b9b6642522b5a44e4',
                       'fields': 'bdate'}

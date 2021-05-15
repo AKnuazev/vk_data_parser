@@ -25,7 +25,6 @@ def find_qual_of_age(ages, ages_quals):
 
 
 def make_age_hist(uid, ages_quals):
-    N = len(ages_quals)
     ages = [age for age in range(0, max_age, ages_step)]
     quals = find_qual_of_age(ages, ages_quals)
 
